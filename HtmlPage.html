@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style6 {
+            width: 480px;
+        }
+        .auto-style7 {
+            width: 286px;
+        }
+        .auto-style8 {
+            width: 286px;
+        }
+        .auto-style9 {
+            height: 24px;
+            width: 292px;
+        }
+        .auto-style10 {
+            width: 292px;
+        }
+        table {
+        text-align:center;
+        }
+        #seatwalk {
+            width: 228px;
+        }
+        #weigh {
+            width: 197px;
+        }
+        #heigh {
+            width: 196px;
+        }
+        </style>
+</head>
+<body>
+    <form method="get" action="pagetransferweb.aspx">
+    <p>
+        姓名:<input id="Name" type="text" name="Name"/></p>
+    <p>
+        年齡:<input id="Age" type="text" name="Age"/></p>
+    <p>
+        性別:<input id="m" checked="true" name="Sex" type="radio" value="男" />男生<input id="fm" checked="true" name="Sex" type="radio" value="女" />女生</p>
+    <p>
+        檢測日期:<input id="Date" type="datetime-local" name="Datetime"/></p>
+    
+
+    <table style="width:100%;" border="1">
+        <tr>
+            <td class="auto-style7"><B>檢測名稱</B></td>
+            <td class="auto-style9" colspan ="2"><B>檢測結果</B></td>
+            <td class="auto-style7"><B>備註</B></td>
+           
+        </tr>
+        <tr>
+            <td class="auto-style8" >身高</td>
+            <td class="auto-style10" colspan ="2">
+                <input id="heigh" type="text" name="heigh"/>公分</td>
+            <td class="auto-style8"></td>
+            
+        </tr>
+        <tr>
+            <td class="auto-style8">體重</td>
+            <td class="auto-style10" colspan ="2">
+                <input id="weigh" type="text" name="weigh"/>公斤</td>
+            <td class="auto-style8"></td>
+           
+        </tr>
+        <tr>
+            <td class="auto-style8">30秒坐站</td>
+            <td class="auto-style10" colspan ="2">
+                <input id="30s" type="text" name="30s" style="width: 222px; margin-left: 0px" />次</td>
+            <td class="auto-style8">最快之速度</td>
+            
+        </tr>
+        <tr>
+            <td class="auto-style7  co" rowspan="2">坐肢體前彎</td>
+            <td class="auto-style9">
+                左</td>
+            <td class="auto-style8">
+                右</td>
+            <td class="auto-style7" rowspan="2">雙手交疊，終止與腳趾間距離</td>
+        </tr>
+        <tr>
+            <td class="auto-style9">
+                <input id="seatleft" type="text" name="seatleft"/>公分</td>
+            <td class="auto-style8">
+                <input id="seatright" type="text" name="seatright"/>公分</td>
+        </tr>
+        <tr>
+            <td class="auto-style8" rowspan="2">雙手背後相扣</td>
+            <td class="auto-style10">
+                左</td>
+            <td class="auto-style8">
+                右</td>
+            <td class="auto-style6" rowspan="2">雙手中指指間距離</td>
+        </tr>
+        <tr>
+            <td class="auto-style10">
+                <input id="bihandleft" type="text" name="bihandleft"/>公分</td>
+            <td class="auto-style8">
+                <input id="bihandright" type="text" name="bihandright"/>公分</td>
+        </tr>
+        <tr>
+            <td class="auto-style8" rowspan="2">單腳站立</td>
+            <td class="auto-style10">左</td>
+            <td class="auto-style8">右</td>
+            <td class="auto-style6" rowspan="2">最快測2分鐘</td>
+
+        </tr>
+        <tr>
+            <td class="auto-style10">
+                <input id="singleleft" type="text" name="singleleft"/>秒</td>
+            <td class="auto-style8">
+                <input id="singleright" type="text" name="singleright"/>秒</td>
+        </tr>
+        <tr>
+            <td class="auto-style8">2.44M坐走</td>
+            <td class="auto-style10" colspan ="2">
+                <input id="seatwalk" type="text" name="seatwalk"/>秒<td class="auto-style8">最快之速度</td>
+                
+            
+        </tr>
+        
+    </table>
+
+    <p>
+        <input id="Button1" type="submit" value="確定" onclick="okclick"/>&nbsp;&nbsp;
+        <input id="Button2" type="reset" value="清除" onclick="removeclick"/></p>
+
+        </form>
+</body>
+
+</html>
